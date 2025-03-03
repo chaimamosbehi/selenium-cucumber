@@ -28,24 +28,21 @@ public class LoginPage extends BasePage {
 	}
 
 	/* Methods */
-	public void fillUsername(String name) {
-
-		username.sendKeys(name);
+	public static WebElement getUsername() {
+		return username;
 	}
 
-	public void fillPassword(String pswd) {
-
-		password.sendKeys(pswd);
+	public static WebElement getPassword() {
+		return password;
 	}
 
-	public void clickBtnLogin() {
+	public static WebElement getBtnLogin() {
+		return btnLogin;
 
-		btnLogin.click();
 	}
-	
-	public String getDashboardTitle() {
-		
-		return menu_dashboard.getText();  
-	} 
+
+	public static WebElement getDashboardTitle() {
+		return menu_dashboard;
+	}
 
 }
